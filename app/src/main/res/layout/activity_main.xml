@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/afrimoneylogo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignLeft="@+id/wheel"-->
+<!--        android:layout_alignRight="@+id/wheel"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:scaleType="centerInside"/>-->
+<!--    android:layout_below="@+id/afrimoneylogo"-->
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/wheel"
+        android:layout_alignRight="@+id/wheel"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginRight="2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrow"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/wheelicon" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wheel"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/Spinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/spin_btn" />
+</RelativeLayout>
